@@ -16,3 +16,11 @@ How practical is this? It's really not that practical via the fact that your onl
 #### Where
 
 ![exploitation process](images/process.png)
+
+1. A output payload file is create since this is exploiting a local SEH based buffer overflow, within the output file is a POC exploit for hijacking the SEH handler and using a (special) POP POP RET to escape the next SEH handler in the SEH chain.
+
+2. You need a process PID to inject a DLL into a process, the PID is automatically discoverd via the process_injection() function using the psutil Python library for PID discovery.
+
+3. The drop_DLL_disk() function is called which decodes and drops a BASE64 encoded payload DLL, in this case it's a calc.exe DLL payload. After dropping the DLL payload to disk, the DLL is injected into the vulnerable process via the automatically discovered PID. 
+
+4. After the new DLL is injected into the vulnerable running process (SurfOffline Professional), the attacker can exploit the vulnerable input field in the "New project" creation tool in SurfOffline Professional. File > New Program > Project Name > OK. This will use the new POP POP RET from the injected DLL to pop a calc.exe. 
