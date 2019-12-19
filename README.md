@@ -28,3 +28,5 @@ How practical is this? It's really not that practical via the fact that your onl
 #### The exploit
 
 This exploit is taken advantage of a vulnerable input field in the SurfOffline Professional program. It's vulnerable to a local SEH based overflow. 
+
+The injected DLL is "essfunc.dll" from the vulnserver exploit development series.
