@@ -7,7 +7,7 @@ Have you ever encountered thousands of useless null byte ridden POP POP RETN add
 
 ![Image of mona ouput](images/pprnull.png)
 
-Well, here is an alternative, via DLL injection, let's add our own DLL module and call a clean and Nullbyte free POP POP RETN address.
+Well, here is an alternative, via DLL injection, let's add our own DLL module and call a clean and null byte free POP POP RETN address.
 
 This will pretty much only apply to Local SEH overflows because it requires to you inject a DLL into the SEH overflow vulnerable process.
 
