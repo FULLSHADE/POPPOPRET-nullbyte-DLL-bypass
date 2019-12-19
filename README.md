@@ -14,3 +14,5 @@ This will pretty much only apply to Local SEH overflows because it requires to y
 How practical is this? It's really not that practical via the fact that your only exploiting a *local* SEH overflow. But if your addicted to popping shells and calculators, this is a fun way to bypass a POP POP RETN address that has a Nullbyte in it's address simply by injecting our own.
 
 #### Where
+
+![exploitation process](images/process.png)
