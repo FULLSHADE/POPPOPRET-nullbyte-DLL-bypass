@@ -29,6 +29,8 @@ How practical is this? It's really not that practical via the fact that your onl
 
 4. After the new DLL is injected into the vulnerable running process (SurfOffline Professional), the attacker can exploit the vulnerable input field in the "New project" creation tool in SurfOffline Professional. File > New Program > Project Name > OK. This will use the new POP POP RET from the injected DLL to pop a calc.exe.
 
+![exploitation image](images/finalexploit.png)
+
 ----
 
 #### The exploit example
