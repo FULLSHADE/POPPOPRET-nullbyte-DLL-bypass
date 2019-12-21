@@ -13,7 +13,7 @@ Well, here is an alternative, via DLL injection, let's add our own DLL module an
 
 This will pretty much only apply to Local SEH overflows because it requires to you inject a DLL into the SEH overflow vulnerable process.
 
-How practical is this? It's really not that practical via the fact that your only exploiting a *local* SEH overflow. But if you are addicted to popping shells and calculators, this is a fun way to bypass a POP POP RETN address that has a Nullbyte in its address simply by injecting our own.
+How practical is this? It's really **not that practical** via the fact that your only exploiting a *local* SEH overflow. But if you are addicted to popping shells and calculators, this is a fun way to bypass a POP POP RETN address that has a Nullbyte in its address simply by injecting our own.
 
 ----
 
