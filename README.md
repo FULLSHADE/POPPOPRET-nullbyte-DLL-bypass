@@ -2,6 +2,8 @@
 
 A method to bypass a null byte only series of POP-POP-RETN address produced by Mona.py for exploiting local SEH overflows via DLL injection.
 
+![Whitepaper publication](https://fullshade.github.io/security/research/2019/12/19/nullbytebypass.html)
+
 ----
 
 #### What
